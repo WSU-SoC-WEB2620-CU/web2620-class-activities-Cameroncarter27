@@ -1,1 +1,146 @@
 /* TODO: Example 01 (Activity 2) CSS goes here */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+header {
+    font-size: 2rem;
+    color: white;
+    padding: 0 1rem;
+    height: 100px;
+    line-height: 100px;
+    background-color: #e9cd72;
+}
+
+footer {
+    font-size: 1.5rem;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    background-color: #e9cd72;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+#main-container {
+    display: table;
+    height: calc(100vh -160px);
+    width: 100vw;
+}
+
+body{
+    margin: 0;
+}
+
+#aside-col {
+    display: none;
+}
+
+#main-col {
+    display: table-cell;
+    background-color: #8687a9;
+}
+
+#main-container .box {
+    height: 100px;
+    line-height: 100px;
+    background-color: #362fcc;
+    text-align: center;
+    color: white;
+    margin: 1rem 1rem 0 1rem;
+    float: left;
+}
+
+#main-container [featured] {
+    border: 5px solid #362fcc;
+    background-color: black;
+}
+#main-container [selected] {
+    color: #e9cd72;
+    background-color: #3a3aef;
+}
+
+@media all and (min-width: 600px) {
+    #main-col .box{
+        float: left;
+        margin: 1rem 0 0 1rem;
+        width: calc((100% - 3rem)/2);
+    }
+}
+
+@media all and (min-width: 800px) {
+    #main-col{
+        width: 70%;
+    }
+    #main-container .box{
+        float: left;
+        margin: 1rem 0 0 1rem;
+        width: calc((100% - 5rem)/3);
+    }
+    #aside-col {
+        display: table-cell;
+        background-color: #6ab4f5;
+    }
+    #aside-col .box {
+        width: calc((100% - 3rem)/2);
+        vertical-align: top;
+    }
+    .clearfix::after {
+        content: ""; 
+        /*clear: both; */
+        /*display: table; */
+    }
+
+    #main-container [selected] {
+        color: #8687a9;
+        background-color:#e4c869;
+    }
+    #main-container [featured] {
+        border: 5px solid #362fcc;
+        background-color: #75abe9;
+    }
+
+    /*Styling Linke*/
+
+    ul.links {
+        list-style: none;
+        padding: 1rem;
+    }
+
+    ul.links li{
+        color: black;
+        padding: .5rem;
+        background-color: #e7e1cd;
+        margin-bottom: .3rem;
+        text-align: center;
+    }
+
+    ul.links > li > a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    ul.links > li > a:link{
+        color: black;
+    }
+    ul.links > li > a:visited{
+        color: #3a3aef;
+    }
+    ul.links > li > a:active{
+        border-bottom: 3px solid #3a3aef;
+    }
+    ul.links > li > a:hover{
+        background-color: #8687a9;
+        
+    }
+    
+}
