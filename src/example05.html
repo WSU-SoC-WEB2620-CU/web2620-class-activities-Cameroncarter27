@@ -1,15 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./stylesheets/example05.css">
   <title>Example 05</title>
 </head>
+
 <body>
   <!-- TODO: Example 05 (Activity 6) HTML goes here -->
-  <p>Activity 6 coming soon</p>
-  
+  <!-- <p>Activity 6 coming soon</p> -->
+  <header>Cameron Carter</header>
+
+  <nav>
+    <ul>
+      <!-- (li>a[href="#$"]{Item $})*6 -->
+      <li><a href="#1">Item 1</a></li>
+      <li><a href="#2">Item 2</a></li>
+      <li><a href="#3">Item 3</a></li>
+      <li><a href="#4">Item 4</a></li>
+      <li><a href="#5">Item 5</a></li>
+      <li><a href="#6">Item 6</a></li>
+    </ul>
+  </nav>
+
+  <div class="featured">
+    <h1>Featured Title Here</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, accusamus porro! Excepturi, deleniti amet
+      facere voluptas non sit voluptatum, praesentium cupiditate commodi eaque voluptate minus repellendus fugiat quo
+      nisi quaerat?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet accusantium alias quae, sunt dolore ex magnam
+      tempore, doloribus magni dolores quia obcaecati fuga maiores, iusto ipsum. Asperiores saepe amet iusto?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda fugiat voluptate enim maiores.
+      Molestiae modi ad omnis provident vel amet dolor cum sapiente, cupiditate sequi doloribus quas iure. Dolorum?</p>
+  </div>
+
+  <form class="aside" id="login">
+    <!-- Username -->
+    <label for="username">Username</label>
+    <input type="text" name="username" id="username">
+
+    <!-- Password -->
+    <label for="password">Password</label>
+    <input type="text" name="password" id="password">
+
+    <!-- Button -->
+    <button type="submit">Login</button>
+  </form>
+
+  <div class="aside" id="pricing">
+    <span>Plans Starting</span>
+    <span>$29.99</span>
+    <button>Subscribe Now!</button>
+
+  </div>
+
+  <div class="card" id="card1">
+    <h2>Card 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit asperiores similique porro error pariatur illo provident nobis facilis dolores blanditiis dolorum ipsam eius dignissimos veniam eveniet nesciunt assumenda, obcaecati harum.</p>
+  </div>
+  <div class="card" id="card2">
+    <h2>Card 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, vero? Facere voluptatum doloribus obcaecati incidunt esse hic excepturi et, consectetur aliquid alias at necessitatibus quisquam aut rerum a ut! Laudantium!</p>
+  </div>
+  <div class="card id=card3">
+    <h2>Card 3</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ut quos totam voluptatibus odit similique ex dolores? Deserunt repellendus enim aliquid sequi quidem ullam quas? Explicabo repudiandae officia laborum nisi.</p>
+  </div>
+
+  <footer>
+    &copy; All Rights Reserved
+  </footer>
   <script type="module" src="./javascripts/main.js"></script>
 </body>
+
 </html>
